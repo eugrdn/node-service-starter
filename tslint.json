@@ -1,0 +1,66 @@
+{
+  "extends": [
+    "tslint:recommended"
+  ],
+  "rules": {
+    "class-name": true,
+    "ordered-imports": false,
+    "member-access": false,
+    "object-literal-sort-keys": false,
+    "interface-name": false,
+    "comment-format": [
+      true,
+      "check-space"
+    ],
+    "indent": [
+      true,
+      "spaces"
+    ],
+    "one-line": [
+      true,
+      "check-open-brace",
+      "check-whitespace"
+    ],
+    "no-var-keyword": true,
+    "quotemark": false,
+    "semicolon": [
+      true,
+      "always",
+      "ignore-bound-class-methods"
+    ],
+    "whitespace": [
+      true,
+      "check-branch",
+      "check-decl",
+      "check-operator",
+      "check-separator",
+      "check-type"
+    ],
+    "typedef-whitespace": [
+      true,
+      {
+        "call-signature": "nospace",
+        "index-signature": "nospace",
+        "parameter": "nospace",
+        "property-declaration": "nospace",
+        "variable-declaration": "nospace"
+      },
+      {
+        "call-signature": "onespace",
+        "index-signature": "onespace",
+        "parameter": "onespace",
+        "property-declaration": "onespace",
+        "variable-declaration": "onespace"
+      }
+    ],
+    "no-internal-module": true,
+    "no-trailing-whitespace": true,
+    "prefer-const": true,
+    "jsdoc-format": true,
+    "no-namespace": false,
+    "arrow-parens": false,
+    "member-ordering": false,
+    "no-console": false,
+    "no-unused-expression": false
+  }
+}

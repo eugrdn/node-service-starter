@@ -1,0 +1,39 @@
+image: node:9.3.0
+
+before_script:
+  - git checkout develop
+  - npm install
+
+cache:
+  paths:
+    - node_modules/
+
+stages:
+  - test
+  - build
+  - deploy
+
+lint:
+  stage: test
+  script:
+    - npm run lint
+
+test:
+  stage: test
+  script:
+    - npm run test
+
+build:
+  stage: build
+  script:
+    - npm run build
+  artifacts:
+    paths:
+      - node_modules/
+      - dist/
+    expire_in: 2 hours
+
+deploy:
+  stage: deploy
+  script:
+    - npm run deploy
